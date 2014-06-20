@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfWrapper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="24"/>
+			<RowDefinition/>
+            <RowDefinition/>
+		</Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="Server">
+                <MenuItem Header="Restart" Click="RestartServ"></MenuItem>
+                <MenuItem Header="Exit" x:Name="Quit" Click="Exit"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Play Type">
+                <MenuItem x:Name="Radio_Creative" IsCheckable="True" Header="Creative" Checked="SelectGameType"></MenuItem>
+                <MenuItem x:Name="Radio_Survival" IsCheckable="True" Header="Survival" Checked="SelectGameType"></MenuItem>
+                <MenuItem x:Name="Radio_Adventure" IsCheckable="True" Header="Adventure" Checked="SelectGameType"></MenuItem>
+            </MenuItem>
+            <TextBlock Text="Port :"></TextBlock>
+            <TextBox Width="64" Text="{Binding Port}"></TextBox>
+        </Menu>
+		<ListBox x:Name="listPlayer" Grid.Row="1"
+				 Foreground="LightGray" Background="#262626">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<DockPanel >
+						<TextBlock Padding="5,0,0,0" Text="Name: "></TextBlock>
+						<TextBlock Padding="0,0,5,0" Text="{Binding .Name}"></TextBlock>
+						<TextBlock Padding="5,0,0,0" Text="Position{"></TextBlock>
+						<TextBlock HorizontalAlignment="Stretch" Text="{Binding .PosX, StringFormat=' {0:F2} ', UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+						<TextBlock HorizontalAlignment="Stretch" Text=","></TextBlock>
+						<TextBlock HorizontalAlignment="Stretch" Text="{Binding .PosY, StringFormat=' {0:F2} ', UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+						<TextBlock HorizontalAlignment="Stretch" Text=","></TextBlock>
+						<TextBlock HorizontalAlignment="Stretch" Text="{Binding .PosZ, StringFormat=' {0:F2} ', UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+						<TextBlock HorizontalAlignment="Stretch" Text="}"></TextBlock>
+						<Button HorizontalAlignment="Stretch" Content="Kick" Click="Kick" Tag="{Binding .ClientID}">
+						</Button>
+					</DockPanel>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+		<ScrollViewer x:Name="ScrollView" Grid.Row="2" VerticalScrollBarVisibility="Auto">
+			<TextBlock	x:Name="Consoler"
+						Text="{Binding .Text, UpdateSourceTrigger=PropertyChanged}"
+						Foreground="LightGray" Background="#262626"/>
+		</ScrollViewer>
+	</Grid>
+</Window>

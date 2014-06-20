@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Fichiers sources\Frustum">
+      <UniqueIdentifier>{db7196ab-e1c5-4083-a055-df3cfe373d7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Frustum">
+      <UniqueIdentifier>{7d9a0abe-d576-4c2c-bb59-e2067dbedbc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Voxel">
+      <UniqueIdentifier>{ab19acd6-2242-4a46-a548-ec94843beaed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Voxel">
+      <UniqueIdentifier>{96c99b2a-9b8a-475a-bcc3-5579e5a7985d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Tools">
+      <UniqueIdentifier>{7fff7760-57ee-4235-905b-c9ba49e6c079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Tools">
+      <UniqueIdentifier>{2a805121-db23-4db3-9def-e51996dd9745}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Renderers">
+      <UniqueIdentifier>{e578bd89-a158-4b65-9f5f-ae6d8be031a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Renderers">
+      <UniqueIdentifier>{5b777bc8-6a56-4049-b050-68bffd7a902b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Entity">
+      <UniqueIdentifier>{b62a6f1f-eede-42d9-8111-044cc5d9f344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Entity">
+      <UniqueIdentifier>{a195f036-86cb-404d-b883-5875cf0f84c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Particles">
+      <UniqueIdentifier>{f828fdf9-b4e1-4674-9239-4b86c69212f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Particles">
+      <UniqueIdentifier>{fe023fc5-6889-45a6-af2a-7e93eb3672dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Particles\emitters">
+      <UniqueIdentifier>{1d2fe6e8-7469-4ee6-b51a-28d52656113d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Particles\renderers">
+      <UniqueIdentifier>{0c16e18d-36a3-433f-987b-004806951632}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Particles\updaters">
+      <UniqueIdentifier>{01e90c24-3629-4085-8bf8-88f0ec0fea33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Particles\emitters">
+      <UniqueIdentifier>{c729cc7c-da95-4ff8-b46d-3daca8882559}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Particles\renderers">
+      <UniqueIdentifier>{ca283bf8-1687-436b-97ca-116277ec452b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Particles\updaters">
+      <UniqueIdentifier>{fee2818f-2fa6-4fe4-810f-864cdda057de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Particles\common">
+      <UniqueIdentifier>{e042da57-fb7b-4c31-83e7-0ac870575b68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Particles\common">
+      <UniqueIdentifier>{9ae8ecbf-d014-48da-9332-75db9a958642}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Camera">
+      <UniqueIdentifier>{482d7b0a-2512-4da5-93b1-bd08d3f0570f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Camera">
+      <UniqueIdentifier>{1df62ad2-cf8d-4bf0-a53d-60ce441e5876}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MineEngine.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Inputs.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Frustum.h">
+      <Filter>Fichiers d%27en-tête\Frustum</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingBox.h">
+      <Filter>Fichiers d%27en-tête\Frustum</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Fichiers d%27en-tête\Frustum</Filter>
+    </ClInclude>
+    <ClInclude Include="ChunkColumn.h">
+      <Filter>Fichiers d%27en-tête\Voxel</Filter>
+    </ClInclude>
+    <ClInclude Include="ChunkLoader.h">
+      <Filter>Fichiers d%27en-tête\Voxel</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.h">
+      <Filter>Fichiers d%27en-tête\Voxel</Filter>
+    </ClInclude>
+    <ClInclude Include="Chunk.h">
+      <Filter>Fichiers d%27en-tête\Voxel</Filter>
+    </ClInclude>
+    <ClInclude Include="shader_utils.h">
+      <Filter>Fichiers d%27en-tête\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.hpp">
+      <Filter>Fichiers d%27en-tête\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2Int.h">
+      <Filter>Fichiers d%27en-tête\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="image_utils.h">
+      <Filter>Fichiers d%27en-tête\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractRenderer.h">
+      <Filter>Fichiers d%27en-tête\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="OculusRenderer.h">
+      <Filter>Fichiers d%27en-tête\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicRenderer.h">
+      <Filter>Fichiers d%27en-tête\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="TextRenderer.h">
+      <Filter>Fichiers d%27en-tête\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Model3.h">
+      <Filter>Fichiers d%27en-tête\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyDome.h">
+      <Filter>Fichiers d%27en-tête\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Fichiers d%27en-tête\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3int.h">
+      <Filter>Fichiers d%27en-tête\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="particle\emitters\sparticules_emitter_simple.h">
+      <Filter>Fichiers d%27en-tête\Particles\emitters</Filter>
+    </ClInclude>
+    <ClInclude Include="particle\updaters\sparticules_updater_collision.h">
+      <Filter>Fichiers d%27en-tête\Particles\updaters</Filter>
+    </ClInclude>
+    <ClInclude Include="particle\updaters\sparticules_updater_color.h">
+      <Filter>Fichiers d%27en-tête\Particles\updaters</Filter>
+    </ClInclude>
+    <ClInclude Include="particle\updaters\sparticules_updater_death_trigger.h">
+      <Filter>Fichiers d%27en-tête\Particles\updaters</Filter>
+    </ClInclude>
+    <ClInclude Include="particle\updaters\sparticules_updater_Life.h">
+      <Filter>Fichiers d%27en-tête\Particles\updaters</Filter>
+    </ClInclude>
+    <ClInclude Include="particle\updaters\sparticules_updater_physics.h">
+      <Filter>Fichiers d%27en-tête\Particles\updaters</Filter>
+    </ClInclude>
+    <ClInclude Include="particle\updaters\sparticules_updater_zone.h">
+      <Filter>Fichiers d%27en-tête\Particles\updaters</Filter>
+    </ClInclude>
+    <ClInclude Include="particle\renderers\sparticules_renderer_billboard.h">
+      <Filter>Fichiers d%27en-tête\Particles\renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="particle\common\sparticules.h">
+      <Filter>Fichiers d%27en-tête\Particles\common</Filter>
+    </ClInclude>
+    <ClInclude Include="particle\common\sparticules_simple_vectormath.h">
+      <Filter>Fichiers d%27en-tête\Particles\common</Filter>
+    </ClInclude>
+    <ClInclude Include="particle\common\sparticules_timer.h">
+      <Filter>Fichiers d%27en-tête\Particles\common</Filter>
+    </ClInclude>
+    <ClInclude Include="particle\common\sparticules_types.h">
+      <Filter>Fichiers d%27en-tête\Particles\common</Filter>
+    </ClInclude>
+    <ClInclude Include="particle\sparticules_interface.h">
+      <Filter>Fichiers d%27en-tête\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="particle\sparticules_layer.h">
+      <Filter>Fichiers d%27en-tête\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="particle\sparticules_stream.h">
+      <Filter>Fichiers d%27en-tête\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="FPSCamera.h">
+      <Filter>Fichiers d%27en-tête\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Fichiers d%27en-tête\Camera</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="MineEngine.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Inputs.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Frustum.cpp">
+      <Filter>Fichiers sources\Frustum</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingBox.cpp">
+      <Filter>Fichiers sources\Frustum</Filter>
+    </ClCompile>
+    <ClCompile Include="Plane.cpp">
+      <Filter>Fichiers sources\Frustum</Filter>
+    </ClCompile>
+    <ClCompile Include="Chunk.cpp">
+      <Filter>Fichiers sources\Voxel</Filter>
+    </ClCompile>
+    <ClCompile Include="ChunkColumn.cpp">
+      <Filter>Fichiers sources\Voxel</Filter>
+    </ClCompile>
+    <ClCompile Include="ChunkLoader.cpp">
+      <Filter>Fichiers sources\Voxel</Filter>
+    </ClCompile>
+    <ClCompile Include="shader_utils.cpp">
+      <Filter>Fichiers sources\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Image_Utils.cpp">
+      <Filter>Fichiers sources\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2Int.cpp">
+      <Filter>Fichiers sources\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractRenderer.cpp">
+      <Filter>Fichiers sources\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="OculusRenderer.cpp">
+      <Filter>Fichiers sources\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicRenderer.cpp">
+      <Filter>Fichiers sources\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="TextRenderer.cpp">
+      <Filter>Fichiers sources\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Model3.cpp">
+      <Filter>Fichiers sources\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyDome.cpp">
+      <Filter>Fichiers sources\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Fichiers sources\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3int.cpp">
+      <Filter>Fichiers sources\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="particle\sparticules_effect.cpp">
+      <Filter>Fichiers sources\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="particle\sparticules_layer.cpp">
+      <Filter>Fichiers sources\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="particle\sparticules_stream.cpp">
+      <Filter>Fichiers sources\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="particle\sparticules_world.cpp">
+      <Filter>Fichiers sources\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="particle\updaters\sparticules_updater_collision.cpp">
+      <Filter>Fichiers sources\Particles\updaters</Filter>
+    </ClCompile>
+    <ClCompile Include="particle\updaters\sparticules_updater_color.cpp">
+      <Filter>Fichiers sources\Particles\updaters</Filter>
+    </ClCompile>
+    <ClCompile Include="particle\updaters\sparticules_updater_death_trigger.cpp">
+      <Filter>Fichiers sources\Particles\updaters</Filter>
+    </ClCompile>
+    <ClCompile Include="particle\updaters\sparticules_updater_Life.cpp">
+      <Filter>Fichiers sources\Particles\updaters</Filter>
+    </ClCompile>
+    <ClCompile Include="particle\updaters\sparticules_updater_physics.cpp">
+      <Filter>Fichiers sources\Particles\updaters</Filter>
+    </ClCompile>
+    <ClCompile Include="particle\updaters\sparticules_updater_zone.cpp">
+      <Filter>Fichiers sources\Particles\updaters</Filter>
+    </ClCompile>
+    <ClCompile Include="particle\renderers\sparticules_renderer_billboard.cpp">
+      <Filter>Fichiers sources\Particles\renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="particle\emitters\sparticules_emitter_simple.cpp">
+      <Filter>Fichiers sources\Particles\emitters</Filter>
+    </ClCompile>
+    <ClCompile Include="particle\common\sparticules_timer.cpp">
+      <Filter>Fichiers sources\Particles\common</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Fichiers sources\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="FPSCamera.cpp">
+      <Filter>Fichiers sources\Camera</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="particle\common\sparticules_timer.inl">
+      <Filter>Fichiers sources\Particles\common</Filter>
+    </None>
+  </ItemGroup>
+</Project>

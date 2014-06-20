@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{39CA7700-E387-4DC8-B30E-CB3AC7B016B2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MineEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;MINEENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>lib\LibOVR\Include;lib\glew-1.10.0\include;lib\glfw-3.0.2.bin.WIN32\include;lib;..\CplusPlusZlib;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>lib\glew-1.10.0\lib\Win32;lib\glfw-3.0.2.bin.WIN32\lib-msvc110;lib\LibOVR\Lib\Win32;..\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;glew32.lib;opengl32.lib;CplusPlusZlib.lib;libovrd.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>call PreBuildDebug.bat</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;MINEENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>lib\LibOVR\Include;lib\glew-1.10.0\include;lib\glfw-3.0.2.bin.WIN32\include;lib;..\CplusPlusZlib;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>lib\glew-1.10.0\lib\Win32;lib\glfw-3.0.2.bin.WIN32\lib-msvc110;..\Release;lib\LibOVR\Lib\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;glew32.lib;opengl32.lib;CplusPlusZlib.lib;libovr.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>call PrebuildRelease.bat</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AbstractRenderer.h" />
+    <ClInclude Include="BasicRenderer.h" />
+    <ClInclude Include="BoundingBox.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Chunk.h" />
+    <ClInclude Include="ChunkColumn.h" />
+    <ClInclude Include="ChunkLoader.h" />
+    <ClInclude Include="Core.h" />
+    <ClInclude Include="Cube.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="FPSCamera.h" />
+    <ClInclude Include="Frustum.h" />
+    <ClInclude Include="image_utils.h" />
+    <ClInclude Include="Inputs.h" />
+    <ClInclude Include="MineEngine.h" />
+    <ClInclude Include="Model3.h" />
+    <ClInclude Include="Obj.h" />
+    <ClInclude Include="OculusRenderer.h" />
+    <ClInclude Include="particle\common\sparticules.h" />
+    <ClInclude Include="particle\common\sparticules_simple_vectormath.h" />
+    <ClInclude Include="particle\common\sparticules_timer.h" />
+    <ClInclude Include="particle\common\sparticules_types.h" />
+    <ClInclude Include="particle\emitters\sparticules_emitter_simple.h" />
+    <ClInclude Include="particle\renderers\sparticules_renderer_billboard.h" />
+    <ClInclude Include="particle\sparticules_interface.h" />
+    <ClInclude Include="particle\sparticules_layer.h" />
+    <ClInclude Include="particle\sparticules_stream.h" />
+    <ClInclude Include="particle\updaters\sparticules_updater_collision.h" />
+    <ClInclude Include="particle\updaters\sparticules_updater_color.h" />
+    <ClInclude Include="particle\updaters\sparticules_updater_death_trigger.h" />
+    <ClInclude Include="particle\updaters\sparticules_updater_Life.h" />
+    <ClInclude Include="particle\updaters\sparticules_updater_physics.h" />
+    <ClInclude Include="particle\updaters\sparticules_updater_zone.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="shader_utils.h" />
+    <ClInclude Include="Singleton.hpp" />
+    <ClInclude Include="SkyDome.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TextRenderer.h" />
+    <ClInclude Include="Vector2Int.h" />
+    <ClInclude Include="Vector3int.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AbstractRenderer.cpp" />
+    <ClCompile Include="BasicRenderer.cpp" />
+    <ClCompile Include="BoundingBox.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Chunk.cpp" />
+    <ClCompile Include="ChunkColumn.cpp" />
+    <ClCompile Include="ChunkLoader.cpp" />
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="FPSCamera.cpp" />
+    <ClCompile Include="Frustum.cpp" />
+    <ClCompile Include="Image_Utils.cpp" />
+    <ClCompile Include="Inputs.cpp" />
+    <ClCompile Include="MineEngine.cpp" />
+    <ClCompile Include="Model3.cpp" />
+    <ClCompile Include="Obj.cpp" />
+    <ClCompile Include="OculusRenderer.cpp" />
+    <ClCompile Include="particle\common\sparticules_timer.cpp" />
+    <ClCompile Include="particle\emitters\sparticules_emitter_simple.cpp" />
+    <ClCompile Include="particle\renderers\sparticules_renderer_billboard.cpp" />
+    <ClCompile Include="particle\sparticules_effect.cpp" />
+    <ClCompile Include="particle\sparticules_layer.cpp" />
+    <ClCompile Include="particle\sparticules_stream.cpp" />
+    <ClCompile Include="particle\sparticules_world.cpp" />
+    <ClCompile Include="particle\updaters\sparticules_updater_collision.cpp" />
+    <ClCompile Include="particle\updaters\sparticules_updater_color.cpp" />
+    <ClCompile Include="particle\updaters\sparticules_updater_death_trigger.cpp" />
+    <ClCompile Include="particle\updaters\sparticules_updater_Life.cpp" />
+    <ClCompile Include="particle\updaters\sparticules_updater_physics.cpp" />
+    <ClCompile Include="particle\updaters\sparticules_updater_zone.cpp" />
+    <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="shader_utils.cpp" />
+    <ClCompile Include="SkyDome.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TextRenderer.cpp" />
+    <ClCompile Include="Vector2Int.cpp" />
+    <ClCompile Include="Vector3int.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="particle\common\sparticules_timer.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
